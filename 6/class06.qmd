@@ -1,0 +1,100 @@
+---
+title: "Class06 10.18.24"
+author: Tim
+format: pdf
+---
+
+
+```{r}
+ADD <- function (x,y) {x + y}
+```
+
+```{r}
+ADD(1,1)
+ADD(x=1, y=100)
+ADD(c(100,1,100),1)
+```
+
+```{r}
+add <- function (x,y=1) {x + y}
+add(10)
+```
+```{r}
+add(1,1)
+```
+
+
+# Q. make a function "GENERATE_DNA()" that makes a random nucluotide seq of any length
+
+# a second function 
+
+```{r}
+bases<- c("A", "C", "G","T")
+sequence <- sample(bases, size=5, replace = TRUE)
+```
+
+```{r}
+generate_dna <- sample(bases, size=100, replace = TRUE, prob = NULL)
+generate_dna
+```
+
+```{r}
+generate_dna <- function(length) {bases<- c("A", "C", "G","T")
+sequence <- sample(bases, size=length, replace = TRUE) 
+return(sequence)}
+```
+
+
+```{r}
+aa <- unique(bio3d::aa.table$aa1)[1:20]
+```
+
+
+```{r}
+generate_protien <- function(length) {bases<- c("A", "C", "G","T")
+sequence <- sample(aa, size=length, replace = TRUE)
+sequence <- paste(sequence,collapse = "")
+return(sequence)}
+```
+
+```{r}
+generate_protien(6)
+```
+
+
+```{r}
+answer <- sapply(6:12, generate_protien)
+answer
+```
+
+
+```{r}
+paste(">id.",6:12)
+```
+
+```{r}
+paste(">id.",6:12, sep = "")
+```
+
+
+```{r}
+paste(">id.",6:12,"\n",answer, sep = "")
+```
+
+
+```{r}
+cat(paste(">id.",6:12,"\n",answer, sep = ""))
+```
+
+```{r}
+cat(paste(">id.",6:12,"\n",answer), sep="\n")
+```
+
+
+
+```{r}
+cat(paste(">id.",6:12,"\n",answer, sep=""), sep="\n")
+```
+```
+
+
