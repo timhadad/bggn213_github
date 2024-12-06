@@ -1,0 +1,14 @@
+---
+title: "Class 16"
+author: "Tim"
+format: html
+---
+
+
+ssh -i "/c/Users/timha/Downloads/bggn213-th.pem" ubuntu@ec2-34-221-3-248.us-west-2.compute.amazonaws.com
+
+
+scp -i "/c/Users/timha/Downloads/bggn213-th.pem" my_notes.text ubuntu@ec2-34-221-3-248.us-west-2.compute.amazonaws.com:~/work/notes.text
+
+gunzip (to unzip gz file)
+to un tar (tar -xvf)

@@ -1,0 +1,106 @@
+---
+title: "Class 10"
+author: "Tim"
+format: pdf
+---
+
+
+```{r}
+pdbstats <- read.csv("Data Export Summary.csv", row.names = 1)
+pdbstats
+```
+
+some of the data is character and not integers 
+#use as.Numeric()
+
+
+```{r}
+x <- pdbstats$Total
+x
+#as.numeric 
+gsub(',', '', x)
+```
+
+```{r}
+convert_comma_numbers <- function(x) {
+  x<- gsub(',', '', x)
+  x <- as.numeric(x)
+  return(x)
+}
+```
+
+```{r}
+convert_comma_numbers(pdbstats$Total)
+```
+
+
+```{r}
+n.tot <- sum(convert_comma_numbers(pdbstats$Total))
+n.tot
+```
+
+The `apply()` function is very useful as it can take any function and "apply" it over either thr ROWS or COLs of data.frame 
+
+```{r}
+colSums(apply(pdbstats, 2, convert_comma_numbers)) / n.tot
+```
+
+
+
+#Q1: What percentage of structures in the PDB are solved by X-Ray and Electron Microscopy.
+
+```{r}
+library(readr)
+read_csv("Data Export Summary.csv")
+```
+
+
+
+
+
+```{r}
+n.xray <- sum(convert_comma_numbers(pdbstats$X.ray))
+n.em <- sum(convert_comma_numbers(pdbstats$EM))
+```
+
+```{r}
+n.xray/n.tot * 100
+n.em/n.tot * 100
+```
+
+
+
+## use Mol*
+
+
+
+```{r}
+library(bio3d)
+
+pdb <- read.pdb("1hsg")
+pdb
+```
+
+
+```{r}
+head(pdb$atom)
+```
+
+```{r}
+pdbseq(pdb)[25]
+```
+
+
+
+Predicting functional motions of a single structure
+
+
+
+
+
+
+
+
+
+
+
