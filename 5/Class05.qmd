@@ -1,7 +1,7 @@
 ---
 title: "Class 5: Data Viz with ggplot"
 author: "Tim"
-format: pdf
+format: gfm
 ---
 
 R has lot's of ways ti make figures and graphs in particular one that comes with R out of the box is called **"base" R** - the `plot()` function. 
