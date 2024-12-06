@@ -1,0 +1,146 @@
+---
+title: "Class 5: Data Viz with ggplot"
+author: "Tim"
+format: pdf
+---
+
+R has lot's of ways ti make figures and graphs in particular one that comes with R out of the box is called **"base" R** - the `plot()` function. 
+
+```{r}
+plot(cars)
+```
+
+
+A very popular package in this area is called **ggplot2**
+
+Before I can use any add-on package like this I must install it with the `install.packages("ggplot2")`
+
+then to use the package I need to load it with a `library(ggplot2)` call
+
+```{r}
+library(ggplot2)
+
+ggplot(cars) +
+  aes(x=speed, y=dist) +
+  geom_point()
+ggsave("myplot.png")
+```
+
+
+for simple plots like this one base R code will be much easier to write than ggplot
+
+let first show it on my plot 
+
+
+```{r}
+ggplot(cars) +
+  aes(x=speed, y=dist) +
+  geom_point() +
+  geom_line()
+```
+
+
+```{r}
+ggplot(cars) +
+  aes(x=speed, y=dist) +
+  geom_point() +
+  geom_smooth()
+```
+
+
+every ggplot has at least 3 layers
+
+- **data** ( data.frame with the numbers or stuff you want to plot)
+- aesthetics **aes** (maping of your data columns to your plot)
+- **geoms** (geom_point, geom_line, geom_col)
+
+
+```{r}
+mtcars
+```
+
+make a ggplot of the `mtcars` data set using `mpg` vs `disp`
+
+
+```{r}
+ggplot(mtcars)+
+  aes(x=mpg, y=disp)+
+  geom_point()+
+  geom_smooth()
+```
+
+
+make a ggplot of the `mtcars` data set using `mpg` vs `disp` and set the size of the points to the `hp`
+
+
+```{r}
+library(ggrepel)
+
+ggplot(mtcars)+
+  aes(x=mpg, y=disp, col=am, label=rownames(mtcars))+
+  geom_point() +
+  facet_wrap(~am) +
+  geom_text_repel()
+```
+
+```{r}
+url <- "https://bioboot.github.io/bimm143_S20/class-material/up_down_expression.txt"
+genes <- read.delim(url)
+head(genes)
+```
+
+
+
+```{r}
+tim <- ggplot(genes) + 
+    aes(x=Condition1, y=Condition2, col=State) +
+    geom_point()
+```
+
+
+
+```{r}
+tim1 <- tim + scale_color_manual( values = c("blue", "grey", "red"))
+tim1
+```
+
+```{r}
+tim1 <- tim + scale_color_manual( values = c("blue", "grey", "red")) +
+  labs(title = "Gene Expresion Changes Upon Drug Treatment",
+       x="Control (no drug)",
+       y="Drug Treatment")
+tim1
+
+ggsave("myplot.png")
+```
+
+```{r}
+round(table(genes$State) / nrow(genes), 3)
+```
+
+
+#the function `nrow`, `ncol`, and `table()` are one I want you to know
+
+
+```{r}
+library(gapminder)
+```
+
+
+
+> key points:
+Saving plot with **ggsave()**
+Different plot "type" with different `geom_**()`
+Facting with `facet_wrap()`
+multi-plot layout with the **patchwork** package.
+
+
+```{r}
+url <- "https://raw.githubusercontent.com/jennybc/gapminder/master/inst/extdata/gapminder.tsv"
+
+gapminder <- read.delim(url)
+```
+
+
+
+
