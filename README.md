@@ -3,8 +3,8 @@ My class work from [BGGN213](https://bioboot.github.io/bggn213_F24/) at UC San D
 
 
 - Class 01: [Welcome to BioInfo]()
-- Class 02: [Seq Align Fund]()
-- Class 03: [Advance Seq Align]()
+- Class 02: [Seq Align Fund](https://github.com/timhadad/bggn213_github/blob/main/2/lab2.pdf)
+- Class 03: [Advance Seq Align](https://github.com/timhadad/bggn213_github/blob/main/3/PSSM%20Lab-3.pdf)
 - Class 04: [Intro to R data structures](https://github.com/timhadad/bggn213_github/blob/main/4/lab4%20EC.pdf)
 - Class 05: [All about GGPLOT](https://github.com/timhadad/bggn213_github/blob/main/5/Class05.md)
 - Class 06: [R Functions](https://github.com/timhadad/bggn213_github/blob/main/6/class06.md)
