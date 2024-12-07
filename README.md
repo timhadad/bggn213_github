@@ -15,8 +15,8 @@ My class work from [BGGN213](https://bioboot.github.io/bggn213_F24/) at UC San D
 - Class 11: [Alpha Fold](https://github.com/timhadad/bggn213_github/blob/main/11/class11_1.pdf)
 - Class 12: [Genome Informatics](https://github.com/timhadad/bggn213_github/blob/main/12/Class12_Q.13_Q.14.pdf)
 - Class 13: [Transcriptomics and RNA Seq]()
-- Class 14: [RNA-Seq mini-project]()
-- Class 15: [Investigating pertussis]()
-- Class 16: [Analyzing sequencing data]()
+- Class 14: [RNA-Seq mini-project](https://github.com/timhadad/bggn213_github/blob/main/14/Class14/class14_1.pdf)
+- Class 15: [Investigating pertussis](https://github.com/timhadad/bggn213_github/blob/main/15/class15/class15.1.pdf)
+- Class 16: [Analyzing sequencing data](https://github.com/timhadad/bggn213_github/blob/main/16/Class16/HW8_unix_questions.pdf)
 
 
