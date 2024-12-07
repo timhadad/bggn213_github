@@ -2,14 +2,14 @@
 My class work from [BGGN213](https://bioboot.github.io/bggn213_F24/) at UC San Diego.
 
 
-- Class 01: [Welcome to BioInfo]()
+- Class 01: [Welcome to BioInfo](https://github.com/timhadad/bggn213_github/blob/main/1/lab1.pdf)
 - Class 02: [Seq Align Fund](https://github.com/timhadad/bggn213_github/blob/main/2/lab2.pdf)
 - Class 03: [Advance Seq Align](https://github.com/timhadad/bggn213_github/blob/main/3/PSSM%20Lab-3.pdf)
 - Class 04: [Intro to R data structures](https://github.com/timhadad/bggn213_github/blob/main/4/lab4%20EC.pdf)
 - Class 05: [All about GGPLOT](https://github.com/timhadad/bggn213_github/blob/main/5/Class05.md)
 - Class 06: [R Functions](https://github.com/timhadad/bggn213_github/blob/main/6/class06.md)
-- Class 07: [Intro to BioInfo]()
-- Class 08: [mini project]()
+- Class 07: [Intro to BioInfo](https://github.com/timhadad/bggn213_github/blob/main/7/class07.pdf)
+- Class 08: [mini project](https://github.com/timhadad/bggn213_github/blob/main/8/class08.pdf)
 - Class 09: [Candy Data](https://github.com/timhadad/bggn213_github/blob/main/9/class9.pdf)
 - Class 10: [structural BioInfo]()
 - Class 11: [Alpha Fold]()
