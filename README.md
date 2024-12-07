@@ -1,7 +1,6 @@
 # BGGN213
 My class work from [BGGN213](https://bioboot.github.io/bggn213_F24/) at UC San Diego.
 
-
 - Class 01: [Welcome to BioInfo](https://github.com/timhadad/bggn213_github/blob/main/1/lab1.pdf)
 - Class 02: [Seq Align Fund](https://github.com/timhadad/bggn213_github/blob/main/2/lab2.pdf)
 - Class 03: [Advance Seq Align](https://github.com/timhadad/bggn213_github/blob/main/3/PSSM%20Lab-3.pdf)
